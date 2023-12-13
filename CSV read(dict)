@@ -1,0 +1,7 @@
+import csv
+with open('newfile.csv','r', newline='') as csvfile:
+ data = csv.DictReader(csvfile)
+ print("Student")
+ print("--------------------")
+ for row in data:
+   print(row['rollno'], row['Name'],row['Course'])
